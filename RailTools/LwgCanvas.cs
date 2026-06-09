@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.IO;
@@ -77,7 +77,7 @@ namespace RaiLTools
     public class LwgCanvas
     {
         private const string _Magic = "LG\x01\x00";
-        private Encoding _ShiftJIS = Encoding.GetEncoding(932);
+        private Encoding _ShiftJIS => EncodingManager.GetEncoding();
         public int Width = 0;
         public int Height = 0;
 
