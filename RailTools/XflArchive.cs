@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -56,7 +56,7 @@ namespace RaiLTools
     {
         private Dictionary<string, XflArchiveEntry> _Entries;
         private const string MAGIC = "LB\x01\x00";
-        private Encoding _ShiftJIS = Encoding.GetEncoding(932);
+        private Encoding _ShiftJIS => EncodingManager.GetEncoding();
 
         /// <summary>
         /// Creates an empty XFL archive.
