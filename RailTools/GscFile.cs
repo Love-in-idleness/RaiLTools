@@ -1,4 +1,4 @@
-﻿using RaiLTools.Tools;
+using RaiLTools.Tools;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +24,7 @@ namespace RaiLTools
 
     public class GscFile
     {
-        private Encoding JIS = Encoding.GetEncoding("shift_jis");
+        private Encoding JIS => EncodingManager.GetEncoding();
 
         public int FileLength;
         public int HeaderLength;
